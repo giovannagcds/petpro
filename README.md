@@ -5,7 +5,7 @@
     </a>
 </h1>
 
-## Pet Pro - Ajudando seu Pet!
+## 🐾 Pet Pro - Ajudando seu Pet!
 
 Sistema que vai facilitar o agendamento de consultas de animais em veterinários.          
 
