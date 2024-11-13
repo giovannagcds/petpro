@@ -5,17 +5,20 @@
     </a>
 </h1>
 
-## PetPro     
+## Pet Pro - Ajudando seu Pet!
 
-Status: Obrigatório
-
-Escolha um nome autoexplicativo e curto para o seu projeto.           
+Sistema que vai facilitar o agendamento de consultas de animais em veterinários.          
 
 ## Descrição          
 
-Status: Obrigatório
+O projeto Pet Pro visa virtualizar o ambiente veterinário criando um sistema que pode facilitar o agendamento de consultas para os animais de um usuário. 
 
-Deixe as pessoas saberem o que seu projeto pode fazer especificamente.  Forneça contexto e adicione um link para qualquer referência que os visitantes possam não estar familiarizados.  Uma lista de recursos ou uma subseção de plano de fundo também pode ser adicionada aqui.  Se houver alternativas ao seu projeto, este é um bom lugar para listar os fatores diferenciadores.  
+➡️ Caso você seja um usuário, o sistema possibilitará para você uma visão ampla dos horários dísponíveis em determinado dia de seu veterinário favorito, 
+tornando possível agendar seu pet sem a necessidade de ligações ou mais questões que impedem um agendamento rápido;
+
+➡️ Caso você seja parte de um veterinário, nosso sistema pobilitará que você visualize seus próximos clientes, em qual horário foi agendado, qual o tipo,
+a raça, e a situação do paciente que vai ser analisado, em um programa de fácil acesso e visualização;
+
 
 ### 🎯 Motivo
 
