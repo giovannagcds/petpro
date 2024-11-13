@@ -7,21 +7,24 @@
     </a>
 </h1>
 
-# 📝 README-Model
+## Nome do projeto           
 
-<p align="center"> Uma Breve Descrição: Referêncas, Markdown, Icons para deizar se arquivo README.md muito, mas muito mais legal. </p>
+Status: Obrigatório
 
-<h2 align="center">
-  <img src="https://img.shields.io/badge/web%3F-ok-blue?style=for-the-badge" alt="Sistema web Ok" />
-  <img src="https://img.shields.io/badge/server%3F-ok-blue?style=for-the-badge" alt="Server Ok" />
-  <img src="https://img.shields.io/badge/Mobile-OK-blue?style=for-the-badge" alt="Aplicativo mobile Ok" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?color=blue&style=for-the-badge" alt="License" />
-</h2>
+Escolha um nome autoexplicativo e curto para o seu projeto.           
 
+## Descrição          
 
-## 😍 Ícones
+Status: Obrigatório
 
-- [Ícones](gistfile1.md)
+Deixe as pessoas saberem o que seu projeto pode fazer especificamente.  Forneça contexto e adicione um link para qualquer referência que os visitantes possam não estar familiarizados.  Uma lista de recursos ou uma subseção de plano de fundo também pode ser adicionada aqui.  Se houver alternativas ao seu projeto, este é um bom lugar para listar os fatores diferenciadores.  
+
+### 🎯 Motivo
+
+Status: Opcional
+
+Descrição do Motivo
+------------------------
 
 ## 📌 Índice
 <p align="center">    
@@ -51,24 +54,7 @@ Se seu projeto já tem uma logo adicione no README. Pode ser um banner também. 
 
 A logo ou banner podem substituir o título, mas não a descrição do projeto. O bom de manter o título e descrição em texto é que ajuda no SEO do Github, o Google vai ajudar indexar melhor seu projeto nas primeiras páginas de pesquisas, além de dar um resumo sobre o seu projeto.
 
-## Nome do projeto           
 
-Status: Obrigatório
-
-Escolha um nome autoexplicativo e curto para o seu projeto.           
-
-## Descrição          
-
-Status: Obrigatório
-
-Deixe as pessoas saberem o que seu projeto pode fazer especificamente.  Forneça contexto e adicione um link para qualquer referência que os visitantes possam não estar familiarizados.  Uma lista de recursos ou uma subseção de plano de fundo também pode ser adicionada aqui.  Se houver alternativas ao seu projeto, este é um bom lugar para listar os fatores diferenciadores.  
-
-### 🎯 Motivo
-
-Status: Opcional
-
-Descrição do Motivo
-------------------------
 
 ## ❔ Sobre o README           
 
