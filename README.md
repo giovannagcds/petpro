@@ -1,5 +1,3 @@
-# petpro
-
 
 <h1 align="center">
     <a href="https://laravelcollective.com/tools/banner">
@@ -7,7 +5,7 @@
     </a>
 </h1>
 
-## Nome do projeto           
+## PetPro     
 
 Status: Obrigatório
 
