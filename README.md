@@ -26,19 +26,34 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 
 ### 🎯 Motivo
 
-Status: Opcional
+Realizamos nosso projeto pensando em todos os donos de pet que já passaram por dificuldades ao agendar uma consulta de veterinário, por falta de organização,
+disponibilidade, agilidade e entre outros nos agendamentos. Nosso sistema impede que esses problemas aconteçam e permite um ambiente de comunição mais agil,
+seguro e rápido.
 
-Descrição do Motivo
-------------------------
+### Funcionalidades
+
+#### Requisitos Funcionais
+- [x] Administrador cadastrar pelo menos um veterinário favorito do usuário;
+- [ ] Login / Logout ou cadastro manual do Usuário/Veterinário/Administrador
+- [ ] Visualização pelo usuário do seu veterinário favorito, tais como seus horários disponíveis.
+- [ ] Permitir ao usuário agendar seu pet dentro do horário disponível, e apenas no horário disponível, além de visualizar que seu pet está agendado;
+- [ ] Permitir ao usuário alterar seus dados de Login;
+- [ ] Permitir ao usuário o cancelamento de um consulta;
+- [ ] Permitir a entrada do usuário como emergência;
+- [ ] Possibilitar ao veterinário a visualização de quais são os pets (além de sua raça e situação médica) agendados nos horários não disponíveis, além de analisar os horários disponíveis;
+- [ ] Possibilitar ao veterinário a visualização dos pets em estado emergencial, que precisam de mais atendimento;
+- [ ] Possibilitar ao veterinário alterar os horários disponíveis, se preciso;
+- [ ] Criar uma interface para o administrador que o possibilite fácil acesso aos usuários e aos veterinários.
+
+
+#### Requisitos Não Funcionais
+
 
 ## 📌 Índice
 <p align="center">    
   <a href="#logotipo-ou-banner"> Logotipo ou Banner </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#nome-do-projeto"> Nome do Projeto </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;          
   <a href="#descrição"> Descrição e motivação </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;  
-  <a href="#index"> Índice </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;  
-  <a href="#sobre-readme"> Sobre README e MarkDown </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;         
-  <a href="#badges"> Badges </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#visuais-e-telas"> Visuais e Telas </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#tecnologias">Tecnologias </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#instalação"> Instalação e Funcionalidades </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
@@ -50,40 +65,12 @@ Descrição do Motivo
   <a href="#referências"> Referências </a>  &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;  
   <a href="#licença"> Licença </a>    
 </p>
-         
-## Logotipo ou Banner
-
-Status: Opcional
-
-Se seu projeto já tem uma logo adicione no README. Pode ser um banner também. Você pode criar uma logo ou banner usando o Canva.
-
-A logo ou banner podem substituir o título, mas não a descrição do projeto. O bom de manter o título e descrição em texto é que ajuda no SEO do Github, o Google vai ajudar indexar melhor seu projeto nas primeiras páginas de pesquisas, além de dar um resumo sobre o seu projeto.
-
-
-
-## ❔ Sobre o README           
-
-Cada projeto é diferente, portanto, considere quais dessas seções se aplicam ao seu.  As seções usadas no modelo são sugestões para a maioria dos projetos de código aberto.  Também tenha em mente que, embora um README possa ser muito longo e detalhado, muito longo é melhor do que muito curto.  
-
-Se você acha que seu README é muito longo, considere utilizar outra forma de documentação em vez de cortar as informações. Essa é uma sugestão de estrutura, cada um pode fazer conforme a necessidade do projeto. Vamos agora cobrir cada um dos tópicos da estrutura e outros pontos adicionais. 
-
-### ⌨️ O que é Markdown?
-
-O Markdown é uma ferramenta de conversão de texto em HTML. Você escreve usando texto simples de fácil leitura e fácil escrita e depois é transformado em um HTML válido.
-
-Markdown foi criado por John Gruber e Aaron Swartz e seu código fonte foi escrito em Perl. O site oficial é esse [aqui](https://daringfireball.net/projects/markdown/)
-
-[Detalhes](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 É  possível visualizar o MarkDown dentro do VS Code adicionando uma extensão:
 <h1 align="center">
     <img alt="VSCode" title="#VSCode" style="object-fit: cover; height:300px;" src=".github/markdown.png"  />
 </h1>
 
-| Shortcuts | Functionality |
-|:----------|------|
-|cmd-k v or ctrl-k| Open preview to the Side| 
-|cmd-shift-v or ctrl-shift-v  |  Open preview |
 
 ## Badges           
 
@@ -115,16 +102,7 @@ Status: Obrigatório
 |  **05/08**  |**A escolha da stack**|    ![npm](https://img.shields.io/npm/v/axios?color=black&label=Axios&logo=insomnia&logoColor=purple)   ![npm](https://img.shields.io/npm/v/sqlite3?color=black&label=Sqlite3&logo=sqlite&logoColor=Blue)       |
 |  **07/08**  |**A milha extra**|             |
 
-### Funcionalidades
 
-#### Aula 1: Tema
-- [x] Criando estrutura da landing page
-- [ ] Estilizando landing page
-- [ ] Autenticação
-  - [x] Login / Logout 
-  - [x] Permanecer logado - Token
-
-[Detalhes](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
 
 ## ⚙ Instalação   
 
