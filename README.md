@@ -16,8 +16,12 @@ O projeto Pet Pro visa virtualizar o ambiente veterinário criando um sistema qu
 ➡️ Caso você seja um usuário, o sistema possibilitará para você uma visão ampla dos horários dísponíveis em determinado dia de seu veterinário favorito, 
 tornando possível agendar seu pet sem a necessidade de ligações ou mais questões que impedem um agendamento rápido;
 
-➡️ Caso você seja parte de um veterinário, nosso sistema pobilitará que você visualize seus próximos clientes, em qual horário foi agendado, qual o tipo,
+➡️ Caso você seja um veterinário, nosso sistema pobilitará que você visualize seus próximos clientes, em qual horário foi agendado, qual o tipo,
 a raça, e a situação do paciente que vai ser analisado, em um programa de fácil acesso e visualização;
+
+➡️ Caso você seja administrador, você poderá fazer a entrada, a retirada e alteração de veterinários e usuários do sistema;
+
+➡️ E ainda assim, caso seja usuário você poderá entrar com um requisito emergencial, para situações mais graves que precisam de atendimento imediato.
 
 
 ### 🎯 Motivo
