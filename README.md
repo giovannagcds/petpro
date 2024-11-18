@@ -24,11 +24,18 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 ➡️ E ainda assim, caso seja usuário você poderá entrar com um requisito emergencial, para situações mais graves que precisam de atendimento imediato.
 
 
-### 🎯 Motivo
+### Motivo
 
 Realizamos nosso projeto pensando em todos os donos de pet que já passaram por dificuldades ao agendar uma consulta de veterinário, por falta de organização,
 disponibilidade, agilidade e entre outros nos agendamentos. Nosso sistema impede que esses problemas aconteçam e permite um ambiente de comunição mais agil,
 seguro e rápido.
+
+### Histórias de Usuário
+
+👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 agendar uma consulta no veterinário 𝗽𝗮𝗿𝗮 um atendimento mais rápido;
+👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 visualizar horários disponíveis 𝗽𝗮𝗿𝗮 um agendamento mais rápido;
+👥
+👥
 
 ### Funcionalidades
 
@@ -40,14 +47,21 @@ seguro e rápido.
 - [ ] Permitir ao usuário alterar seus dados de Login;
 - [ ] Permitir ao usuário o cancelamento de um consulta;
 - [ ] Permitir a entrada do usuário como emergência;
-- [ ] Possibilitar ao veterinário a visualização de quais são os pets (além de sua raça e situação médica) agendados nos horários não disponíveis, além de analisar os horários disponíveis;
+- [ ] Possibilitar ao veterinário a visualização de quais são os pets (além de sua raça e situação médica) agendados nos horários não disponíveis ou os horários disponíveis;
 - [ ] Possibilitar ao veterinário a visualização dos pets em estado emergencial, que precisam de mais atendimento;
 - [ ] Possibilitar ao veterinário alterar os horários disponíveis, se preciso;
 - [ ] Criar uma interface para o administrador que o possibilite fácil acesso aos usuários e aos veterinários.
 
 
 #### Requisitos Não Funcionais
-
+- [x] Acesso rápido por meio de arquivo instalador exe;
+- [ ] Proteger contra acesso não autorizado.
+- [ ] Criar um sistema que possibilite a segurança de dados, permitindo ao usuário e ao veterinário, e apenas eles, a alteração de dados importantes;
+- [ ] Permitir confiabilidade do usuário com dados reais e contato direto com os veterinários;
+- [ ] Ser compatível com o sistema operacional do Windows 10;
+- [ ] Tentativa de conexão adequada e correta por meio do servidor xammp, ligando-a diretamente com o banco de dados sql;
+- [ ] Estar conforme a Lei nº 13.709, de 14 de agosto de 2018, que visa a segurança de dados;
+- [ ] Atenda as necessidades do usuário e do veterinário;
 
 ## 📌 Índice
 <p align="center">    
