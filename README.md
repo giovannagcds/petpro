@@ -28,13 +28,16 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 
 Realizamos nosso projeto pensando em todos os donos de pet que já passaram por dificuldades ao agendar uma consulta de veterinário, por falta de organização,
 disponibilidade, agilidade e entre outros nos agendamentos. Nosso sistema impede que esses problemas aconteçam e permite um ambiente de comunição mais agil,
-seguro e rápido.
+seguro e rápido.h
 
 ### Histórias de Usuário
 
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 agendar uma consulta no veterinário 𝗽𝗮𝗿𝗮 um atendimento mais rápido;
+
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 visualizar horários disponíveis 𝗽𝗮𝗿𝗮 um agendamento mais rápido;
+
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 alterar meus dados 𝗽𝗮𝗿𝗮 um sistema seguro;
+
 👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar 𝗽𝗮𝗿𝗮 um sistema seguro;
 
 ### Funcionalidades
