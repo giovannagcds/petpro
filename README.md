@@ -78,13 +78,7 @@ seguro e rápido.h
 
 ## 📸 Visuais e Telas 
 
-Status: Obrigatório
-
-Dependendo do que você está fazendo, pode ser uma boa ideia incluir capturas de tela ou até mesmo um vídeo (você verá frequentemente GIFs em vez de vídeos reais).   
-
-A maneira mais segura de manter os arquivos é criar uma pasta screenshots, github, assets, resources ou nome que você quiser e deixar os arquivos nela. Se você usar um CDN de imagens ou gif pode funcionar mas corre o risco do quebrar o link algum dia.
-
-
+<img width="200" height="180" style="border-radius: 50%;" src="vizualizar_horarios.png">
 
 ## ⚙ Instalação   
 
