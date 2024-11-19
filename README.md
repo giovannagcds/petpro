@@ -24,7 +24,7 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 ➡️ E ainda assim, caso seja usuário você poderá entrar com um requisito emergencial, para situações mais graves que precisam de atendimento imediato.
 
 
-### Motivo
+## Motivo
 
 Realizamos nosso projeto pensando em todos os donos de pet que já passaram por dificuldades ao agendar uma consulta de veterinário, por falta de organização,
 disponibilidade, agilidade e entre outros nos agendamentos. Nosso sistema impede que esses problemas aconteçam e permite um ambiente de comunição mais agil,
@@ -32,24 +32,24 @@ seguro e rápido.h
 
 ## Histórias de Usuário
 
-#### usuário
+#### Usuário
 
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 agendar uma consulta no veterinário 𝗽𝗮𝗿𝗮 um atendimento mais rápido;
 
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 visualizar horários disponíveis 𝗽𝗮𝗿𝗮 um agendamento mais rápido;
 
-#### veterinário
+#### Veterinário
 
 👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar os pets agendados 𝗽𝗮𝗿𝗮 um atendimento rápido;
 
 👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar quais são os pets em estado de emergência 𝗽𝗮𝗿𝗮 um atendimento justo;
 
-#### administrador
+#### Administrador
 
 👥 𝗖𝗼𝗺𝗼 administrador, 𝗾𝘂𝗲𝗿𝗼 gerenciar os dados de veterinários e usuários 𝗽𝗮𝗿𝗮 um sistema funcional;
 
 
-### Funcionalidades
+## Funcionalidades
 
 #### Requisitos Funcionais
 - [x] Administrador cadastrar pelo menos um veterinário favorito do usuário;
