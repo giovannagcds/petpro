@@ -32,13 +32,22 @@ seguro e rápido.h
 
 ### Histórias de Usuário
 
+## usuário
+
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 agendar uma consulta no veterinário 𝗽𝗮𝗿𝗮 um atendimento mais rápido;
 
 👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 visualizar horários disponíveis 𝗽𝗮𝗿𝗮 um agendamento mais rápido;
 
-👥 𝗖𝗼𝗺𝗼 dono(a) de pet, 𝗾𝘂𝗲𝗿𝗼 alterar meus dados 𝗽𝗮𝗿𝗮 um sistema seguro;
+## veterinário
 
-👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar 𝗽𝗮𝗿𝗮 um sistema seguro;
+👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar os pets agendados 𝗽𝗮𝗿𝗮 um atendimento rápido;
+
+👥 𝗖𝗼𝗺𝗼 veterinário, 𝗾𝘂𝗲𝗿𝗼 visualizar quais são os pets em estado de emergência 𝗽𝗮𝗿𝗮 um atendimento justo;
+
+## veterinário
+
+👥 𝗖𝗼𝗺𝗼 administrador, 𝗾𝘂𝗲𝗿𝗼 gerenciar os dados de veterinários e usuários 𝗽𝗮𝗿𝗮 um sistema funcional;
+
 
 ### Funcionalidades
 
