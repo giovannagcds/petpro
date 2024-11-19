@@ -78,7 +78,7 @@ seguro e rápido.h
 
 ## 📸 Visuais e Telas 
 
-<img width="200" height="180" style="border-radius: 50%;" src="vizualizar_horários.png">
+<img width="200" height="180" style="border-radius: 50%;" src="visualizar_horários.png">
 
 ## ⚙ Instalação   
 
