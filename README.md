@@ -104,7 +104,8 @@ Você fará o download do arquivo .zip, e por meio do arquivo .zip, você extrai
     <tr align=center>
       <td>
         <a href="https://github.com/shyoutarou">
-          <img width="200" height="180" style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/66930143?s=460&u=9a46318c1563414a627c432d89b8ae53bf359430&v=4">
+          <img width="200" height="180" style="border-radius: 50%;" src="[https://avatars3.githubusercontent.com/u/66930143?s=460&u=9a46318c1563414a627c432d89b8ae53bf359430&v=4](https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopee.com.br%2F%25C3%25B3culos-pet-para-gato-cachorro-porquinho-da-%25C3%25ADndia-mini-coelho-sagui-chinchila-hamster-e-rato-i.273123341.4091275143&psig=AOvVaw1TCdyZp5Y2565h7Ppe9wHj&ust=1732123203502000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjshfTz6IkDFQAAAAAdAAAAABAE)">
+          <img width="200" height="180" style="border-radius: 50%;" src="[https://avatars3.githubusercontent.com/u/66930143?s=460&u=9a46318c1563414a627c432d89b8ae53bf359430&v=4](https://down-br.img.susercontent.com/file/2e79f1542022b442fb6c0702021e7b21)">
         </a>
       </td>
     </tr>
