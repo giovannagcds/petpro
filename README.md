@@ -83,6 +83,7 @@ seguro e rápido.h
  <td><img width="200" height="180" style="border-radius: 50%;" src="visualizar_horários.png"> </td>
  <td><img width="200" height="180" style="border-radius: 50%;" src="agendar_pet.png"> </td>
  <td><img width="200" height="180" style="border-radius: 50%;" src="cadastro.png"> </td>
+ <td><img width="200" height="180" style="border-radius: 50%;" src="cadastro.png"> </td>
 </tr>
 </table>
 
