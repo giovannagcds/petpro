@@ -78,9 +78,13 @@ seguro e rápido.h
 
 ## 📸 Visuais e Telas 
 
-<img width="200" height="180" style="border-radius: 50%;" src="visualizar_horários.png">
-<img width="200" height="180" style="border-radius: 50%;" src="agendar_pet.png">
-<img width="200" height="180" style="border-radius: 50%;" src="cadastro.png">
+<table style="width:100%">
+<tr>
+ <td><img width="200" height="180" style="border-radius: 50%;" src="visualizar_horários.png"> </td>
+ <td><img width="200" height="180" style="border-radius: 50%;" src="agendar_pet.png"> </td>
+ <td><img width="200" height="180" style="border-radius: 50%;" src="cadastro.png"> </td>
+</tr>
+</table>
 
 ## ⚙ Instalação   
 
