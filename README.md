@@ -89,7 +89,8 @@ seguro e rápido.h
 
 ## ⚙ Instalação   
 
-Você fará o download do arquivo .zip, e por meio do arquivo .zip, você extrairá a pasta principal do arquivo e executará o arquivo .exe dentro dessa pasta, iniciando a aplicação do PetPro 
+Primeiro você instalará o arquivo sql (que contém nosso banco de dados) e com a aplicação XAMPP, você poderá importar nosso banco de dados no seu sistema para usá-lo localmente;
+Após isso, você fará o download do arquivo .zip, e por meio do arquivo .zip, você extrairá a pasta principal do arquivo e executará o arquivo .exe dentro dessa pasta, iniciando a aplicação do PetPro.
 
 
 ## Autores e reconhecimento     
