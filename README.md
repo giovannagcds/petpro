@@ -46,7 +46,7 @@ seguro e rápido.h
 
 #### Administrador
 
-👥 𝗖𝗼𝗺𝗼 administrador, 𝗾𝘂𝗲𝗿𝗼 gerenciar os dados de veterinários e usuários 𝗽𝗮𝗿𝗮 um sistema funcional;
+👥 𝗖𝗼𝗺𝗼 administrador, 𝗾𝘂𝗲𝗿𝗼 gerenciar os dados de veterinários 𝗽𝗮𝗿𝗮 um sistema funcional;
 
 
 ## Funcionalidades
