@@ -62,7 +62,7 @@ seguro e rápido.h
 - [ ] Possibilitar ao veterinário a visualização de quais são os pets (além de sua raça e situação médica) agendados nos horários não disponíveis ou os horários disponíveis;
 - [ ] Possibilitar ao veterinário a visualização dos pets em estado emergencial, que precisam de mais atendimento;
 - [ ] Possibilitar ao veterinário alterar os horários disponíveis, se preciso;
-- [ ] Criar uma interface para o administrador que o possibilite fácil acesso aos usuários e aos veterinários.
+- [ ] Criar uma interface para o administrador que o possibilite fácil acesso aos veterinários.
 
 
 #### Requisitos Não Funcionais
