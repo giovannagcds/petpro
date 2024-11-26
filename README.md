@@ -104,10 +104,15 @@ DELIMITER ;
 ## ⚙ Instalação   
 
 1- Instalar o arquivo .sql que contém nosso banco de dados;
+
 2- Instalar o XAMPP, para que possa acessar o arquivo;
+
 3- Dentro do XAMPP, você ativará as opções MySql e Apache e apertará no botão Admin em frente ao MySQL;
+
 4- Você criará uma nova database chamada PetPro, clicará em Importar e adicionará o arquivo, clicando por fim em executar;
+
 5- Feito isso, agora você vai fazer o download do arquivo .exe que está aqui projeto\projeto\bin\Debug;
+
 6- Executando-o, você já pode usar o PetPro.
 
 
