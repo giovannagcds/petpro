@@ -146,5 +146,3 @@ O projeto publicado em 2024 sobre a licença [MIT](./LICENSE) ❤️
 Made with ❤️ by Giovanna e Mayra
 
 Gostou? Deixe uma estrelinha para ajudar o projeto ⭐
-
-- [Voltar ao Início](#index)
