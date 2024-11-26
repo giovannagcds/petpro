@@ -75,6 +75,20 @@ seguro e rápido.h
 - [ ] Estar conforme a Lei nº 13.709, de 14 de agosto de 2018, que visa a segurança de dados;
 - [ ] Atenda as necessidades do usuário e do veterinário;
 
+## Alguns códigos utilizados:
+
+DELIMITER $$
+
+CREATE TRIGGER after_veterinario_insert
+AFTER INSERT ON veterinario
+FOR EACH ROW
+BEGIN
+    INSERT INTO veterinario_horario (FK_horario_id_horario, FK_veterinario_id_veterinario)
+    SELECT id_horario, NEW.id_veterinario
+    FROM horario;
+END$$
+
+DELIMITER ;
 
 ## 📸 Visuais e Telas 
 
@@ -89,9 +103,12 @@ seguro e rápido.h
 
 ## ⚙ Instalação   
 
-Primeiro você instalará o arquivo sql (que contém nosso banco de dados) e com a aplicação XAMPP, você poderá importar nosso banco de dados no seu sistema para usá-lo localmente;
-
-Após isso, você fará o download do arquivo .zip, e por meio do arquivo .zip, você extrairá a pasta principal do arquivo e executará o arquivo .exe dentro dessa pasta, iniciando a aplicação do PetPro.
+1- Instalar o arquivo .sql que contém nosso banco de dados;
+2- Instalar o XAMPP, para que possa acessar o arquivo;
+3- Dentro do XAMPP, você ativará as opções MySql e Apache e apertará no botão Admin em frente ao MySQL;
+4- Você criará uma nova database chamada PetPro, clicará em Importar e adicionará o arquivo, clicando por fim em executar;
+5- Feito isso, agora você vai fazer o download do arquivo .exe que está aqui projeto\projeto\bin\Debug;
+6- Executando-o, você já pode usar o PetPro.
 
 
 ## Autores e reconhecimento     
