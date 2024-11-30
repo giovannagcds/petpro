@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace projeto
 {
@@ -79,7 +80,7 @@ namespace projeto
                 try
                 {
                     connection.Open();
-                    string query = "INSERT INTO veterinario (nome_veterinario, localizacao, email, telefone, senha, permissao) VALUES (@Nome, @Local, @Email, @Telefone, @Senha, @Permissao)";
+                    string query = "INSERT INTO veterinario (nome_veterinario, localizacao, email, telefone, senha, permissao, img) VALUES (@Nome, @Local, @Email, @Telefone, @Senha, @Permissao, @Img)";
                     using (MySqlCommand cmd = new MySqlCommand(query, connection))
                     {
                         cmd.Parameters.AddWithValue("@Nome", textBox1.Text);
@@ -88,17 +89,38 @@ namespace projeto
                         cmd.Parameters.AddWithValue("@Telefone", textBox4.Text);
                         cmd.Parameters.AddWithValue("@Senha", textBox5.Text);
                         cmd.Parameters.AddWithValue("@Permissao", "vet");
+
+                        // Converter imagem para byte
+                        byte[] imageBytes;
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            pictureBox1.Image.Save(ms, pictureBox2.Image.RawFormat); imageBytes = ms.ToArray();
+                        }
+                        cmd.Parameters.AddWithValue("@Img", imageBytes);
                         cmd.ExecuteNonQuery();
                     }
-                    MessageBox.Show("Veterinario cadastrado com sucesso!");
+                    MessageBox.Show("Clinica cadastrada com sucesso!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erro ao cadastrar veterinario: {ex.Message}");
+                    MessageBox.Show($"Erro ao cadastrar Clinica: {ex.Message}");
                 }
             }
-            loginVet login = new loginVet();
-            login.Show();
+
+            inicioAdm iadm = new inicioAdm(); 
+            iadm.Show();
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
     }
 }

@@ -44,7 +44,7 @@ namespace projeto
                         if (userCount > 0)
                         {
                             MessageBox.Show("Login realizado com sucesso!");
-                            inicio inicio = new inicio();
+                            inicioAdm inicio = new inicioAdm();
                             inicio.Show();
                         }
                         else

@@ -110,6 +110,12 @@
     <Compile Include="agendarEmergencia.Designer.cs">
       <DependentUpon>agendarEmergencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="alterarVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alterarVet.Designer.cs">
+      <DependentUpon>alterarVet.cs</DependentUpon>
+    </Compile>
     <Compile Include="cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="inicio.Designer.cs">
       <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicioAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicioAdm.Designer.cs">
+      <DependentUpon>inicioAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -160,6 +172,9 @@
     <Compile Include="visualizar_horarios.Designer.cs">
       <DependentUpon>visualizar_horarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="alterarVet.resx">
+      <DependentUpon>alterarVet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cadastro.resx">
       <DependentUpon>cadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicioAdm.resx">
+      <DependentUpon>inicioAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
