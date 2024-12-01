@@ -21,7 +21,7 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 
 ➡️ Caso você seja administrador, você poderá fazer a entrada, a retirada e alteração de veterinários do sistema;
 
-➡️ E ainda assim, caso seja usuário você poderá entrar com um requisito emergencial, para situações mais graves que precisam de atendimento imediato.
+➡️ E ainda assim, caso seja usuário, você poderá entrar com um requisito emergencial, para situações mais graves que precisam de atendimento imediato.
 
 
 ## Motivo
