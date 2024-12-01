@@ -111,7 +111,7 @@ DELIMITER ;
 
 4- Você criará uma nova database chamada PetPro, clicará em Importar e adicionará o arquivo, clicando por fim em executar;
 
-5- Feito isso, agora você vai fazer o download do arquivo .exe que está aqui projeto\projeto\bin\Debug;
+5- Feito isso, agora você vai fazer o download do arquivo .exe que está aqui: projeto\projeto\bin\Debug;
 
 6- Executando-o, você já pode usar o PetPro.
 
