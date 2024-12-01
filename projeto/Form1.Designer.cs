@@ -40,7 +40,7 @@ namespace projeto
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(205)))), ((int)(((byte)(162)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.button2.Location = new System.Drawing.Point(582, 397);
+            this.button2.Location = new System.Drawing.Point(641, 418);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(308, 65);
             this.button2.TabIndex = 1;
@@ -53,7 +53,7 @@ namespace projeto
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(205)))), ((int)(((byte)(162)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.button1.Location = new System.Drawing.Point(582, 298);
+            this.button1.Location = new System.Drawing.Point(641, 319);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(308, 65);
             this.button1.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace projeto
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(205)))), ((int)(((byte)(162)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.button3.Location = new System.Drawing.Point(582, 495);
+            this.button3.Location = new System.Drawing.Point(641, 516);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(308, 65);
             this.button3.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace projeto
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1284, 701);
+            this.ClientSize = new System.Drawing.Size(1364, 729);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);

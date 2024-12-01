@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=9.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.1.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
@@ -110,6 +111,18 @@
     <Compile Include="agendarEmergencia.Designer.cs">
       <DependentUpon>agendarEmergencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="alterarAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alterarAnimal.Designer.cs">
+      <DependentUpon>alterarAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alterarEmergencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alterarEmergencia.Designer.cs">
+      <DependentUpon>alterarEmergencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="alterarVet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +159,12 @@
     <Compile Include="inicioAdm.Designer.cs">
       <DependentUpon>inicioAdm.cs</DependentUpon>
     </Compile>
+    <Compile Include="inicioVet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicioVet.Designer.cs">
+      <DependentUpon>inicioVet.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,14 +183,44 @@
     <Compile Include="loginVet.Designer.cs">
       <DependentUpon>loginVet.cs</DependentUpon>
     </Compile>
+    <Compile Include="perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perfil.Designer.cs">
+      <DependentUpon>perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="visualizar_agendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizar_agendamento.Designer.cs">
+      <DependentUpon>visualizar_agendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizar_emergencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizar_emergencia.Designer.cs">
+      <DependentUpon>visualizar_emergencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="visualizar_horarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="visualizar_horarios.Designer.cs">
       <DependentUpon>visualizar_horarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agendarAnimal.resx">
+      <DependentUpon>agendarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agendarEmergencia.resx">
+      <DependentUpon>agendarEmergencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alterarAnimal.resx">
+      <DependentUpon>alterarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alterarEmergencia.resx">
+      <DependentUpon>alterarEmergencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="alterarVet.resx">
       <DependentUpon>alterarVet.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +239,9 @@
     <EmbeddedResource Include="inicioAdm.resx">
       <DependentUpon>inicioAdm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="inicioVet.resx">
+      <DependentUpon>inicioVet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginVet.resx">
       <DependentUpon>loginVet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perfil.resx">
+      <DependentUpon>perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,6 +263,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="visualizar_agendamento.resx">
+      <DependentUpon>visualizar_agendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizar_emergencia.resx">
+      <DependentUpon>visualizar_emergencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="visualizar_horarios.resx">
       <DependentUpon>visualizar_horarios.cs</DependentUpon>
     </EmbeddedResource>

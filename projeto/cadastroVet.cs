@@ -59,7 +59,7 @@ namespace projeto
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            inicioAdm home = new inicioAdm();
             home.Show();
         }
 

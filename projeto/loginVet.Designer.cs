@@ -42,9 +42,9 @@ namespace projeto
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(205)))), ((int)(((byte)(162)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(528, 558);
+            this.button1.Location = new System.Drawing.Point(563, 574);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 50);
+            this.button1.Size = new System.Drawing.Size(233, 48);
             this.button1.TabIndex = 7;
             this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = false;
@@ -56,10 +56,10 @@ namespace projeto
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.textBox2.Location = new System.Drawing.Point(528, 487);
+            this.textBox2.Location = new System.Drawing.Point(563, 503);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 39);
+            this.textBox2.Size = new System.Drawing.Size(247, 37);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "Senha";
             this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
@@ -69,10 +69,10 @@ namespace projeto
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.textBox1.Location = new System.Drawing.Point(528, 418);
+            this.textBox1.Location = new System.Drawing.Point(563, 434);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 37);
+            this.textBox1.Size = new System.Drawing.Size(247, 35);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Email";
             this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
@@ -95,7 +95,7 @@ namespace projeto
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1284, 701);
+            this.ClientSize = new System.Drawing.Size(1364, 729);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);

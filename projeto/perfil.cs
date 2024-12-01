@@ -9,24 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace projeto
 {
-    public partial class alterarVet : Form
+    public partial class perfil : Form
     {
-        public int idVeterinario;
-
-        public alterarVet(int idVeterinario)
+        private int id_usuario;
+        public perfil(int id_usuario)
         {
             InitializeComponent();
-            this.idVeterinario = idVeterinario;
-            CarregarDadosVeterinario();
+            this.id_usuario = id_usuario;
+            CarregarDados();
         }
 
-        private void CarregarDadosVeterinario()
+        private void CarregarDados()
         {
             string connectionString = "server=localhost;database=petpro;user=root;password='';";
-            string query = "SELECT * FROM veterinario WHERE id_veterinario = @id";
+            string query = "SELECT * FROM usuario WHERE id_usuario = @id_usuario";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -34,18 +34,17 @@ namespace projeto
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", idVeterinario);
+                    cmd.Parameters.AddWithValue("@id_usuario", id_usuario);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            textBox1.Text = reader["nome_veterinario"].ToString();
-                            textBox2.Text = reader["localizacao"].ToString();
-                            textBox4.Text = reader["telefone"].ToString();
-                            textBox3.Text = reader["email"].ToString();
-                            textBox5.Text = reader["senha"].ToString();
-                          
+                            textBox1.Text = reader["nome_usuario"].ToString();
+                            textBox2.Text = reader["email"].ToString();
+                            textBox3.Text = reader["telefone"].ToString();
+                            textBox4.Text = reader["senha"].ToString();
+
                         }
                     }
                 }
@@ -56,10 +55,20 @@ namespace projeto
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string connectionString = "server=localhost;database=petpro;user=root;password='';";
-            string query = "UPDATE veterinario SET nome_veterinario = @nome, localizacao = @localizacao, telefone = @telefone, email = @correo, senha = @senha, permissao = @permissao, img = @img WHERE id_veterinario = @id";
+            string query = "UPDATE usuario SET nome_usuario = @nome, email = @email, telefone = @telefone, senha = @senha, img = @img WHERE id_usuario = @id_usuario";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -67,21 +76,19 @@ namespace projeto
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", idVeterinario);
+                    cmd.Parameters.AddWithValue("@id_usuario", id_usuario);
                     cmd.Parameters.AddWithValue("@nome", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@localizacao", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@telefone", textBox4.Text);
-                    cmd.Parameters.AddWithValue("@correo", textBox3.Text);
-                    cmd.Parameters.AddWithValue("@senha", textBox5.Text);
-                    cmd.Parameters.AddWithValue("@permissao", "vet");
+                    cmd.Parameters.AddWithValue("@email", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@telefone", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@senha", textBox4.Text);
 
                     // Convertendo a imagem para byte array
                     byte[] imgBytes = null;
-                    if (pictureBox2.Image != null)
+                    if (pictureBox1.Image != null)
                     {
                         using (MemoryStream ms = new MemoryStream())
                         {
-                            pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
+                            pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
                             imgBytes = ms.ToArray();
                         }
                     }
@@ -90,23 +97,13 @@ namespace projeto
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Dados atualizados com sucesso!");
-                    inicioAdm ia = new inicioAdm();
-                    ia.Show();
+                    inicio i = new inicio(id_usuario);
+                    i.Show();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao atualizar dados: " + ex.Message);
                 }
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox2.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
     }

@@ -8,96 +8,137 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace projeto
 {
     public partial class inicioAdm : Form
     {
+        private MySqlConnection connection;
         public inicioAdm()
         {
             InitializeComponent();
-            carregarDados();
+            string connectionString = "server=localhost;database=petpro;uid=root;pwd='';"; 
+            connection = new MySqlConnection(connectionString); 
+            LoadVeterinarios();
+        }
+
+        private void LoadVeterinarios()
+        {
+            try
+            {
+                connection.Open();
+                string query = "SELECT id_veterinario, nome_veterinario, localizacao, telefone, email, senha, permissao FROM veterinario";
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                dataGridView1.DataSource = table;
+
+                // Adding the Alterar button
+                DataGridViewButtonColumn alterarButtonColumn = new DataGridViewButtonColumn();
+                alterarButtonColumn.Name = "Alterar";
+                alterarButtonColumn.HeaderText = "Alterar";
+                alterarButtonColumn.Text = "Alterar";
+                alterarButtonColumn.UseColumnTextForButtonValue = true;
+                dataGridView1.Columns.Add(alterarButtonColumn);
+
+                // Adding the Excluir button
+                DataGridViewButtonColumn excluirButtonColumn = new DataGridViewButtonColumn();
+                excluirButtonColumn.Name = "Excluir";
+                excluirButtonColumn.HeaderText = "Excluir";
+                excluirButtonColumn.Text = "Excluir";
+                excluirButtonColumn.UseColumnTextForButtonValue = true;
+                dataGridView1.Columns.Add(excluirButtonColumn);
+
+                dataGridView1.CellClick += dataGridView1_CellClick;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void button1_Click_1(object sender, EventArgs e)
         {
             cadastroVet iadm = new cadastroVet();
             iadm.Show();
         }
 
-        private void carregarDados()
-        {
-            string connectionString = "server=localhost;database=petpro;user=root;password='';";
-            string query = "SELECT * FROM veterinario";
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                try
-                {
-                    conn.Open(); MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable); dataGridView1.DataSource = dataTable;
-                    // Adicionar botões de "Alterar" e "Excluir"
-                    DataGridViewButtonColumn btnAlterar = new DataGridViewButtonColumn();
-                    btnAlterar.HeaderText = "Alterar"; btnAlterar.Text = "Alterar";
-                    btnAlterar.UseColumnTextForButtonValue = true;
-                    btnAlterar.Name = "btnAlterar";
-                    dataGridView1.Columns.Add(btnAlterar);
-
-                    DataGridViewButtonColumn btnExcluir = new DataGridViewButtonColumn();
-                    btnExcluir.HeaderText = "Excluir"; btnExcluir.Text = "Excluir";
-                    btnExcluir.UseColumnTextForButtonValue = true;
-                    btnExcluir.Name = "btnExcluir";
-                    dataGridView1.Columns.Add(btnExcluir);
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao carregar dados: " + ex.Message);
-                }
-            }
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dataGridView1.Columns["btnAlterar"].Index && e.RowIndex >= 0)
+           
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridView1.Columns["Alterar"].Index)
             {
-                // Navegar para a página de alteração
-                string idVeterinario = dataGridView1.Rows[e.RowIndex].Cells["id_veterinario"].Value.ToString();
-                alterarVet page = new alterarVet(idVeterinario);
-                page.Show();
+                int idVeterinario = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_veterinario"].Value);
+                AlterarVeterinario(idVeterinario);
             }
-            else if (e.ColumnIndex == dataGridView1.Columns["btnExcluir"].Index && e.RowIndex >= 0)
+            else if (e.ColumnIndex == dataGridView1.Columns["Excluir"].Index)
             {
-                // Excluir o veterinário
-                string idVeterinario = dataGridView1.Rows[e.RowIndex].Cells["id_veterinario"].Value.ToString();
+                int idVeterinario = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_veterinario"].Value);
                 ExcluirVeterinario(idVeterinario);
             }
         }
 
-        private void ExcluirVeterinario(string idVeterinario)
+        private void AlterarVeterinario(int idVeterinario)
         {
-            string connectionString = "server=localhost;database=petpro;user=root;password='';";
-            string query = "DELETE FROM veterinario WHERE id_veterinario = @id";
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            // Lógica para alterar o veterinário
+            // Navegar para a página de alteração, passando o id do veterinário
+            alterarVet alterarVetForm = new alterarVet(idVeterinario);
+            alterarVetForm.Show();
+        }
+
+        private void ExcluirVeterinario(int idVeterinario)
+        {
+            try
             {
-                try
-                {
-                    conn.Open(); MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", idVeterinario);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Veterinário excluído com sucesso!");
-                    carregarDados();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao excluir o veterinário: " + ex.Message);
-                }
+                connection.Open();
+                string query = "DELETE FROM veterinario WHERE id_veterinario = @id";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@id", idVeterinario);
+                cmd.ExecuteNonQuery();
+
+                // Excluindo registros da tabela de relacionamento
+                string relQuery = "DELETE FROM veterinario_horario WHERE FK_veterinario_id_veterinario = @id";
+                MySqlCommand relCmd = new MySqlCommand(relQuery, connection);
+                relCmd.Parameters.AddWithValue("@id", idVeterinario);
+                relCmd.ExecuteNonQuery();
+
+                MessageBox.Show("Veterinário excluído com sucesso!");
+                LoadVeterinarios();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private void inicioAdm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inicioAdm_Click(object sender, EventArgs e)
+        {
+            LoadVeterinarios();
         }
     }
 }

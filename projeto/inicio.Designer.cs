@@ -46,6 +46,7 @@ namespace projeto
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -53,7 +54,7 @@ namespace projeto
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.label1.Location = new System.Drawing.Point(418, 304);
+            this.label1.Location = new System.Drawing.Point(430, 303);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 36);
             this.label1.TabIndex = 1;
@@ -65,7 +66,7 @@ namespace projeto
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(94)))), ((int)(((byte)(63)))));
-            this.label2.Location = new System.Drawing.Point(420, 340);
+            this.label2.Location = new System.Drawing.Point(432, 339);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 24);
             this.label2.TabIndex = 2;
@@ -76,7 +77,7 @@ namespace projeto
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(205)))), ((int)(((byte)(162)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(102)))), ((int)(((byte)(79)))));
-            this.button1.Location = new System.Drawing.Point(456, 388);
+            this.button1.Location = new System.Drawing.Point(516, 394);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(311, 57);
             this.button1.TabIndex = 4;
@@ -90,7 +91,7 @@ namespace projeto
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1284, 701);
+            this.ClientSize = new System.Drawing.Size(1364, 729);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

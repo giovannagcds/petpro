@@ -13,6 +13,7 @@ namespace projeto
 {
     public partial class login : Form
     {
+        private int id_usuario;
         public login()
         {
             InitializeComponent();
@@ -66,16 +67,26 @@ namespace projeto
                         if (userCount > 0)
                         {
                             MessageBox.Show("Login realizado com sucesso!");
-                            inicio inicio = new inicio();
-                            inicio.Show();
+
+                            string query1 = "SELECT id_usuario FROM usuario WHERE email = @Email AND senha = @Senha AND permissao = @Usuario";
+                            using (MySqlCommand cmd1 = new MySqlCommand(query1, connection))
+                            {
+                                cmd1.Parameters.AddWithValue("@Email", textBox1.Text);
+                                cmd1.Parameters.AddWithValue("@Senha", textBox2.Text);
+                                cmd1.Parameters.AddWithValue("@Usuario", "usr");
+                                id_usuario = Convert.ToInt32(cmd1.ExecuteScalar());
+                            }
+                                inicio inicio = new inicio(id_usuario);
+                                inicio.Show();
                         }
                         else
                         {
                             MessageBox.Show("Email, senha ou permissão incorretos(as).");
                         }
                     }
+                } catch (Exception ex) {
+                    MessageBox.Show($"Erro ao tentar fazer login: {ex.Message}");
                 }
-                catch (Exception ex) { MessageBox.Show($"Erro ao tentar fazer login: {ex.Message}"); }
             }
         }
 
