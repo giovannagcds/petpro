@@ -73,7 +73,7 @@ seguro e confortável.
 - [ ] Ser compatível com o sistema operacional do Windows 10;
 - [ ] Tentativa de conexão adequada e correta por meio do servidor xampp, ligando-a diretamente com o banco de dados sql;
 - [ ] Estar conforme a Lei nº 13.709, de 14 de agosto de 2018, que visa a segurança de dados;
-- [ ] Atenda as necessidades do usuário e do veterinário;
+- [ ] Atender as necessidades do usuário e do veterinário, e ainda, do adminsistrador;
 
 ## Alguns códigos utilizados:
 
