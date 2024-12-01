@@ -71,7 +71,7 @@ seguro e confortável.
 - [ ] Criar um sistema que possibilite a segurança de dados, permitindo ao usuário e ao veterinário, e apenas eles, a alteração de dados importantes;
 - [ ] Permitir confiabilidade do usuário com dados reais e contato direto com os veterinários;
 - [ ] Ser compatível com o sistema operacional do Windows 10;
-- [ ] Tentativa de conexão adequada e correta por meio do servidor xammp, ligando-a diretamente com o banco de dados sql;
+- [ ] Tentativa de conexão adequada e correta por meio do servidor xampp, ligando-a diretamente com o banco de dados sql;
 - [ ] Estar conforme a Lei nº 13.709, de 14 de agosto de 2018, que visa a segurança de dados;
 - [ ] Atenda as necessidades do usuário e do veterinário;
 
