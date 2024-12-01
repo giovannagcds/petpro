@@ -28,7 +28,7 @@ a raça, e a situação do paciente que vai ser analisado, em um programa de fá
 
 Realizamos nosso projeto pensando em todos os donos de pet que já passaram por dificuldades ao agendar uma consulta de veterinário, por falta de organização,
 disponibilidade, agilidade e entre outros nos agendamentos. Nosso sistema impede que esses problemas aconteçam e permite um ambiente de comunição mais agil,
-seguro e rápido.h
+seguro e confortável.
 
 ## Histórias de Usuário
 
