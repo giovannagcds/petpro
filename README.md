@@ -128,12 +128,12 @@ DELIMITER ;
     </tr>
     <tr align=center>
       <td>
-        <a href="https://github.com/shyoutarou">
+        <a href="">
           <img width="200" height="180" style="border-radius: 50%;" src="eu-gi.jpg">
         </a>
       </td>
       <td>
-        <a href="https://github.com/shyoutarou">
+        <a href="">
           <img width="200" height="180" style="border-radius: 50%;" src="mayra.jpg">
         </a>
       </td>
